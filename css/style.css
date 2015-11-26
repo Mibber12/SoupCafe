@@ -1,12 +1,46 @@
-
-body {
+/*Main styles*/
+body,
+html
+ 
+ {
 
 	text-align: center;
   	font-family: 'Roboto', sans-serif;
-  	color: #696969;
+  	color: #333;
 }
 
+.welkom ul {
 
+   list-style: none;
+
+}
+
+p {
+
+   width:800px;
+   margin: 0 auto;
+
+}
+
+h2 {
+	
+	font-style: italic;
+	font-family:'Cantata One', serif;;
+
+}
+
+img {
+
+	max-width: 100%;
+	margin-bottom: 20px;
+	margin-top: 20px;
+	padding-top: 50px;
+	padding-bottom: 10px;
+  	height: 550px;
+
+}
+
+/*styles header and navigation*/
 nav {
 
 	position: fixed;
@@ -49,7 +83,7 @@ nav {
 .nav-animate a {
 
   	padding: 0.3em 0;
-  	color: #696969;
+  	color: #333;
   	position: relative;
   	text-decoration: none;
 }
@@ -104,7 +138,6 @@ h1 {
 }
 
 
-
 #main-header {
 
   font-size: 6.625rem;
@@ -132,37 +165,19 @@ h1 {
 }
 
 
-.welkom ul {
-
-   list-style: none;
-
-}
-
-p {
-
-   width:800px;
-   margin: 0 auto;
-
-}
 
 
-img {
-
-	max-width: 100%;
-	margin-bottom: 20px;
-	margin-top: 20px;
-	padding-top: 50px;
-	padding-bottom: 10px;
-  	height: 550px;
-
-}
+/*styles footer*/
 
 .main-footer {
 
+	width: 100%;
 	padding-top: 60px;
 	padding-bottom: 60px;
 	margin-top: 30px;
 	border-top: 1px solid #D3D3D3;
+	position: absolute;
+	
 }
 
 
@@ -176,17 +191,22 @@ img {
     display: inline;
     letter-spacing: 0.5px;
     word-spacing: 2px;
+    font-size: 15px;
 
 }
 
 
+
+
+
+
 /*media queries*/
 
-@media all and (max-width: 960px) {
+@media all and (max-width: 960px) and (min-width: 481px) {
 
 body {
     background-color: #FFFFFF;
   }
 }
 
-}
+
