@@ -1,0 +1,82 @@
+
+body,
+html {
+	
+	text-align: center;
+	background-color: #fff;
+
+}
+
+h3 {
+
+    font-style: italic;
+	font-family:'Cantata One', serif;;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 36px;
+    line-height: 50px;
+    margin-bottom: 25px;
+
+
+}
+
+.h2 {
+
+	font-family:'Cantata One', serif;;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 25px;
+
+}
+
+.center {
+
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+/*styles footer*/
+
+.main-footer {
+
+	width: 100%;
+	padding-top: 60px;
+	padding-bottom: 60px;
+	margin-top: 30px;
+	border-top: 1px solid #D3D3D3;
+	position: absolute;
+	
+}
+
+
+.main-footer ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.main-footer ul li {
+    display: inline;
+    letter-spacing: 0.5px;
+    word-spacing: 2px;
+    font-size: 15px;
+
+}
+
+
+
+
+
+
+/*media queries*/
+
+@media all and (max-width: 960px) and (min-width: 481px) {
+
+body {
+    background-color: #FFFFFF;
+  }
+}
