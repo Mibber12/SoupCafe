@@ -4,19 +4,43 @@ html {
 	
 	text-align: center;
 	background-color: #fff;
+	font-family:'Cantata One', serif;;
 
 }
 
-h3 {
+nav {
 
-    font-style: italic;
-	font-family:'Cantata One', serif;;
-    font-weight: normal;
-    font-style: normal;
-    font-size: 36px;
-    line-height: 50px;
-    margin-bottom: 25px;
+	position: auto;
+	width: 1000px;
+	margin: auto;
+	top: 0;
+	z-index: 170;
+	padding-top: 10px;
+	width: 100%;
+	background-color: rgba(255, 255, 255, 255);
+	word-spacing: 1em;
+	font-size: 18px;
+}	
 
+
+
+.navbar li {
+
+  	display: inline-block;
+  	list-style: outside none none;
+  	margin: 0.5em 1.5em;
+  	padding: 0;
+  	padding-bottom: 5px;
+  	
+  	
+}
+
+.navbar a {
+
+  	padding: 0.3em 0;
+  	color: #333;
+  	position: relative;
+  	text-decoration: none;
 
 }
 
@@ -28,6 +52,7 @@ h3 {
     font-size: 20px;
     line-height: 25px;
 
+
 }
 
 .center {
@@ -38,6 +63,19 @@ h3 {
     padding-left: 150px;
     padding-right: 150px;
 }
+
+h3 {
+
+    font-style: normal;
+    font-size: 36px;
+    line-height: 50px;
+    border-bottom: 2px solid;
+    display: inline;
+
+}
+
+
+
 
 /*styles footer*/
 
