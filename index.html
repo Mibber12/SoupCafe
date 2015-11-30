@@ -6,9 +6,10 @@
 	<title>Soup!</title>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
 	</script>
+	  
 
 	<link rel="stylesheet" href="css/style.css">
-	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Vidaloka|Trocchi' rel='stylesheet' type='text/css'>
 
 </head>
 <body>
@@ -16,12 +17,14 @@
 			<header>
 				<nav>
 					<ul class="nav-animate"> 
-						<li class="current"><a href="#">Home</a></li>
-						<li><a href="#welkom">Welkom</a></li>
-						<li><a href="#soepmenu">Soepmenu</a></li>
-						<li><a href="#catering">Catering</a></li>
-						<li><a href="#openingstijden">Openingstijden</a></li>
+						<li class='nav-item'><a href="#Welkom">Welkom</a></li>
+						<li class='nav-item'><a href="#Soepmenu">Soepmenu</a></li>
+						<li class='nav-item'><a href="Catering.html">Catering</a></li>
+						<li class='nav-item'><a href="#Contact">Contact</a></li>
 					</ul> 
+					<div>
+						<img src="img/logosoepkantine.jpg" alt="logo soepkantine" id="header-logo">
+					</div>
 				</nav>
 				<div id="main-header">
 					<h1>Soup!</h1>	
@@ -31,8 +34,8 @@
 			</header>
 		</section>	
 		<div class="main-content">
-			<div class="welkom">
-				<h2>Welkom</h2>
+			<div>
+				<h2 id="Welkom">Welkom</h2>
 				<p>Wij van Soup! houden van Soep! We serveren huisgemaakte, verse soepen in de vorm van een menu dat altijd bestaat uit soep met lekker brood. Maar je kunt de soep ook zonder brood bestellen. En als je onze soep mee wilt nemen dan is dat ook geen probleem.</p>
 				<p><br>Naast heerlijke soepen serveren wij ook:</br></p>
 				<ul>
@@ -45,15 +48,19 @@
 				</ul>
 				<p>Ieder week wisselt het menu. Er is voor ieder wat wils, er zijn vlees- en/of kippensoepen, en vegetarische soepen. Er staat altijd minimaal één soep op het menu die geschikt is voor veganisten en voor mensen die gluten- of lactosevrij eten.</p>
 				<p><br>Soup! schenkt ook heerlijke koffie. Espresso, Cortado, Cappuccino, Latte Macchiato en een lekkere mok koffie verkeerd.
-			 	Een stuk cheesecake of een truffel bij de koffie is ook mogelijk. Drink je geen koffie? Dan hebben hebben wij thee, melk, mineraalwater en biologische sapjes voor jou.</br></p>
-			 </div>	
-
-			<div class="soepmenu"> 
+			 	Een stuk cheesecake of een truffel bij de koffie is ook mogelijk. Drink je geen koffie? Dan hebben wij thee, melk, mineraalwater en biologische sapjes voor jou.</br></p>
+			</div>	 	
+			<div>	
 				<img src="img/soup2.jpg" alt="foto vers gesneden groenten op snijplank">
-				<h2>Soepmenu</h2>
+				<h2 id="Soepmenu">Soepmenu</h2>
 				<p>Dagelijks staan er vijf soepen op het menu, in een wekelijks wisselend menu. In de zomer hebben we de Indiase Linzensoep en de Mulligatawny (zoete aardappelsoep met mango chutney en appel). In de winter staat verse Erwtensoep klaar op het fornuis. Naast de verschillende soorten soep hebben we standaard twee salades in huis: de Kikkererwtensalade met feta en tomaat, en de Couscoussalade met courgette, olijf en amandel!</p>
-			</div>
-		</div>
+			</div>	
+			<div>	
+				<img src="img/soup3.jpg" alt="interieur soepkantine houten tafel">
+				<h2 id="Contact">Contact</h2>
+				<p>Bij Soup! staat de soep klaar van maandag t/m zondag van 12.00 - 19.00<br>Zie hieronder voor de routebeschrijving naar Soup!<br></p>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2418.6796268646603!2d4.630235610507484!3d52.37943389835069!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c5ef6ad089cfcf%3A0xdb97ad9af5f1875c!2sGierstraat+4%2C+2011+GD+Haarlem!5e0!3m2!1snl!2snl!4v1448910052731" width="830" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+
 	</div>	
 		<footer class="main-footer">
 			<p>
@@ -61,7 +68,7 @@
 					<li>Gierstraat 000</li>
 					<li>2011 GD Haarlem</li>	
 					<li><a href="tel://+31061234567">tel:+31 061234567</a></li>
-					<li>info@soup.nl</li>
+					<li><a href="mailto:info@soup.nl">info@soup.nl</li>
 				</ul>
 			</p>	
 		</footer>
