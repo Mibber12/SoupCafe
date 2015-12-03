@@ -1,10 +1,10 @@
 /*Main styles*/
-body,
-html
- 
- {
+body,  
+html {
 
-	text-align: center;
+  position: relative;
+  min-height: 100%;
+  text-align: center;
   font-family: 'Quicksand', sans-serif;
   color: #333;
 }
@@ -22,8 +22,6 @@ p {
 
 }
 
-
-
 img {
 
 	max-width: 100%;
@@ -39,7 +37,7 @@ img {
 nav {
 
 	position: fixed;
-	margin-bottom: 25px;
+	margin-bottom: 10px;
 	top: 0;
 	z-index: 170;
 	padding: 5px;
@@ -59,16 +57,14 @@ nav {
 
 .nav-animate * {
 
-  	-webkit-box-sizing: border-box;
   	box-sizing: border-box;
-  	-webkit-transition: all 0.35s ease;
   	transition: all 0.35s ease;
 }
 
 .nav-animate li {
 
   	display: inline-block;
-  	list-style: outside none none;
+  	list-style: none;
   	margin: 0.5em 1.5em;
   	padding: 0;
 }
@@ -85,10 +81,9 @@ nav {
 .nav-animate a:before,
 .nav-animate a:after {
 
-	height: 3px;
+	height: 2px;
 	position: absolute;
 	content: '';
-	webkit-transition: all 0.35s ease;
 	transition: all 0.35s ease;
 	background-color: #000000;
 	width: 0;
@@ -121,7 +116,6 @@ nav {
 h1 {
 
   color: #FFFFFF;
-  font-weight: bold;
   line-height: 1.3em;
   border-bottom: 2px solid;
   border-top: 2px solid;
@@ -130,6 +124,13 @@ h1 {
 
 }
 
+
+h2 {
+    
+    font-size: 25px;
+    font-weight: normal;
+
+  }
 
 #main-header {
 
@@ -159,10 +160,7 @@ h1 {
 
 
 }
-  
-  
 
-}  
 
 #open-dicht {
 	
@@ -174,6 +172,12 @@ h1 {
 
 }
 
+.main-content {
+
+  padding-bottom: 50px;
+
+}
+
 .main-content ul li{
 
   list-style: none;
@@ -181,44 +185,42 @@ h1 {
 }
 
 
-iframe {
-
-  padding-top: 20px;
-
-}
-
 
 /*styles footer*/
 
-.main-footer {
 
-  width: 100%;
-  padding-top: 60px;
-  padding-bottom: 60px;
-  margin-top: 30px;
-  border-top: 1px solid;
-  position: absolute;
+footer {
+    position: relative;
+    top:10px;
+    height: 100px;
+    width: 100%;
+    border-top: 1px solid;
   
 }
 
-
-.main-footer ul{
-    list-style: none;
-    margin: 0;
-    padding: 0;
-
-}
-
-.main-footer ul li {
-    display: inline;
+.footer-info {
+    
     letter-spacing: 0.5px;
     word-spacing: 2px;
     font-size: 15px;
-
+    
 
 }
 
+.footer-info li {
 
+    list-style: none;
+    display: inline;
+
+}
+
+.footer-social img {
+
+  width: 50px;
+  height: 50px;
+  display: inline;
+
+}
 
 
 /*media queries*/

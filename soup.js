@@ -16,4 +16,5 @@ var checkOpenStatus = function () {
     }
     document.getElementById("open-dicht").innerHTML = y;
 }
+
 setInterval(checkOpenStatus,100);
