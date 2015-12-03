@@ -1,15 +1,16 @@
-
+/*Main styles*/
 body,
 html {
-	
-	text-align: center;
-	background-color: #fff;
-	font-family:'Quicksand', serif;;
+  text-align: center;
+  background-color: #fff;
+  font-family:'Quicksand', serif;
+  font-size: 18px;
 
 }
 
-nav {
+/*Styles heading and navigation*/
 
+nav {
 	position: auto;
 	width: 1000px;
 	margin: auto;
@@ -22,78 +23,55 @@ nav {
 	font-size: 18px;
 }	
 
-
-
 .navbar li {
-
   	display: inline-block;
   	margin: 0.5em 1.5em;
   	padding: 0;
-  	padding-bottom: 5px;
-  	
-  	
+  	padding-bottom: 5px;	 	
 }
 
 .navbar a {
-
   	padding: 0.3em 0;
   	color: #333;
   	position: relative;
   	text-decoration: none;
-
 }
 
 .navbar ul li {
-
-	list-style: outside none none;
-
+	 list-style: outside none none;
 }
 
 h1 {
-
-border-bottom: 1px solid;
-font-size: 36px;
-line-height: 50px; 
-
+  border-bottom: 1px solid;
+  font-size: 36px;
+  line-height: 50px; 
 }
 
-p {
-
-  font-size: 16px;
-  margin-top: 15px;
-
-}
+/*Styles images*/
 
 img {
-
   max-width: 100%;
   margin-bottom: 20px;
   margin-top: 20px;
   padding-top: 50px;
   padding-bottom: 10px;
   height: 550px;
-  
-
 }
-
 
 iframe {
-
   padding-top: 20px;
-
 }
 
-/*styles footer*/
+
+/*Styles footer*/
 
 .main-footer {
-
 	width: 100%;
 	padding-top: 60px;
 	padding-bottom: 60px;
 	margin-top: 30px;
 	border-top: 1px solid;
 	position: absolute;
-	
 }
 
 
@@ -101,7 +79,6 @@ iframe {
     list-style: none;
     margin: 0;
     padding: 0;
-
 }
 
 .main-footer ul li {
@@ -109,7 +86,6 @@ iframe {
     letter-spacing: 0.5px;
     word-spacing: 2px;
     font-size: 15px;
-
 }
 
 

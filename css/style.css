@@ -1,7 +1,6 @@
 /*Main styles*/
 body,  
 html {
-
   position: relative;
   min-height: 100%;
   text-align: center;
@@ -10,32 +9,38 @@ html {
 }
 
 .welkom ul {
-
    list-style: none;
-
 }
 
 p {
-
    width:800px;
    margin: 0 auto;
-
 }
 
-img {
+.main-content {
+  padding-bottom: 50px;
+}
 
+.main-content ul li{
+  list-style: none;
+}
+
+/*Styles images*/
+
+img {
 	max-width: 100%;
 	margin-bottom: 20px;
 	margin-top: 20px;
 	padding-top: 50px;
 	padding-bottom: 10px;
   height: 550px;
-
 }
 
-/*styles header and navigation*/
-nav {
 
+
+/*Styles heading and navigation*/
+
+nav {
 	position: fixed;
 	margin-bottom: 10px;
 	top: 0;
@@ -47,22 +52,18 @@ nav {
 	font-size: 18px;
 }	
 
-
 .nav-animate {
-
   	text-align: center;
   	font-weight: 500;
   	letter-spacing: 1px;
 }
 
 .nav-animate * {
-
   	box-sizing: border-box;
   	transition: all 0.35s ease;
 }
 
 .nav-animate li {
-
   	display: inline-block;
   	list-style: none;
   	margin: 0.5em 1.5em;
@@ -70,28 +71,24 @@ nav {
 }
 
 .nav-animate a {
-
-  	padding: 0.3em 0;
+    padding: 0.3em 0;
   	color: #333;
   	position: relative;
   	text-decoration: none;
 }
 
-
 .nav-animate a:before,
 .nav-animate a:after {
-
-	height: 2px;
-	position: absolute;
-	content: '';
-	transition: all 0.35s ease;
-	background-color: #000000;
-	width: 0;
-
+	 height: 2px;
+	 position: absolute;
+	 content: '';
+	 transition: all 0.35s ease;
+	 background-color: #000000;
+	 width: 0;
 }
 
 .nav-animate a:before {
-  	top: 0;
+    top: 0;
   	left: 0;
 }
 
@@ -101,39 +98,33 @@ nav {
 }
 
 .nav-animate a:hover, .nav-animate .current a {
- 	color: #000000;
-
+ 	  color: #000000;
 }
 
 .nav-animate a:hover:before,
 .nav-animate .current a:before,
 .nav-animate a:hover:after,
 .nav-animate .current a:after {
- width: 100%;
-
+  width: 100%;
 }
 
 h1 {
-
   color: #FFFFFF;
   line-height: 1.3em;
   border-bottom: 2px solid;
   border-top: 2px solid;
   display: inline-block;
   font-family: 'Vidaloka', serif;
-
 }
 
 
 h2 {
-    
-    font-size: 25px;
-    font-weight: normal;
-
+  font-size: 25px;
+  font-weight: normal;
   }
 
-#main-header {
 
+#main-header {
   font-size: 6.625rem;
   color: #FFFFFF;
   background-color: #ffa949;
@@ -145,11 +136,10 @@ h2 {
   background-size: cover; 
   display:none;  
   letter-spacing: 10px;
-
 }
 
-#header-logo {
 
+#header-logo {
   float:left;
   width:140px;
   height:135px;
@@ -157,69 +147,42 @@ h2 {
   margin-bottom: -15px;
   margin-top: -140px;
   padding-top: 35px;
-
-
 }
 
 
 #open-dicht {
-	
    position: relative;
    z-index: 2;
    line-height: 50px;
    background: transparent;
    bottom: 50px;
-
-}
-
-.main-content {
-
-  padding-bottom: 50px;
-
-}
-
-.main-content ul li{
-
-  list-style: none;
-
 }
 
 
-
-/*styles footer*/
-
-
+/*Styles footer*/
 footer {
     position: relative;
     top:10px;
     height: 100px;
     width: 100%;
-    border-top: 1px solid;
-  
+    border-top: 1px solid; 
 }
 
 .footer-info {
-    
     letter-spacing: 0.5px;
     word-spacing: 2px;
     font-size: 15px;
-    
-
 }
 
 .footer-info li {
-
     list-style: none;
     display: inline;
-
 }
 
 .footer-social img {
-
   width: 50px;
   height: 50px;
   display: inline;
-
 }
 
 
