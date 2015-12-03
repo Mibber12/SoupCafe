@@ -1,0 +1,170 @@
+
+body,
+html {
+	
+	text-align: center;
+	background-color: #fff;
+	font-family:'Quicksand', serif;;
+
+}
+
+nav {
+
+	position: auto;
+	width: 1000px;
+	margin: auto;
+	top: 0;
+	z-index: 170;
+	padding-top: 20px;
+	width: 100%;
+	background-color: rgba(255, 255, 255, 255);
+	word-spacing: 1em;
+	font-size: 18px;
+}	
+
+
+
+.navbar li {
+
+  	display: inline-block;
+  	margin: 0.5em 1.5em;
+  	padding: 0;
+  	padding-bottom: 5px;
+  	
+  	
+}
+
+.navbar a {
+
+  	padding: 0.3em 0;
+  	color: #333;
+  	position: relative;
+  	text-decoration: none;
+
+}
+
+.navbar ul li {
+
+	list-style: outside none none;
+
+}
+
+.h2 {
+
+	font-family:'Quicksand', serif;
+    font-size: 17px;
+    line-height: 20px;
+
+}
+
+.center {
+
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-bottom: 15px;
+   
+}
+
+h3 {
+
+border-bottom: 1px solid;
+font-size: 36px;
+line-height: 50px; 
+
+
+}
+
+.catering {
+    
+    font-family:'Quicksand', serif;
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 50px; 
+   	margin-top: 5px;
+
+  }  
+
+ h4 {
+
+ 	font-weight: bold;
+    font-size: 15px;
+
+ }   
+
+.row {
+    margin-right: -15px;
+    margin-left: -15px;
+    margin-top: 10px;
+    padding-top: 10px;
+
+  }  
+
+.info p {
+
+    font-size: 17px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-top: 20px;
+
+  
+}
+
+img {
+
+  
+  max-width: 100%;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  padding-top: 50px;
+  padding-bottom: 10px;
+  height: 550px;
+  
+
+}
+
+
+/*styles footer*/
+
+.main-footer {
+
+	width: 100%;
+	padding-top: 60px;
+	padding-bottom: 60px;
+	margin-top: 30px;
+	border-top: 1px solid;
+	position: absolute;
+	
+}
+
+
+.main-footer ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+.main-footer ul li {
+    display: inline;
+    letter-spacing: 0.5px;
+    word-spacing: 2px;
+    font-size: 15px;
+
+
+}
+
+
+/*media queries*/
+
+@media all and (max-width: 960px) and (min-width: 481px) {
+
+body {
+    background-color: #FFFFFF;
+  }
+}
