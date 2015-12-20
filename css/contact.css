@@ -49,17 +49,21 @@ h1 {
 
 /*Styles images*/
 
-img {
+.feat-img {
   max-width: 100%;
   margin-bottom: 20px;
   margin-top: 20px;
   padding-top: 50px;
   padding-bottom: 10px;
   height: 550px;
+  padding: 10px;
+  border: solid 1px #d9e4ea;
 }
 
 iframe {
   padding-top: 20px;
+  padding: 10px;
+  border: solid 1px #d9e4ea;
 }
 
 

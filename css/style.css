@@ -15,7 +15,7 @@ html {
 p {
    width:800px;
    margin: 0 auto;
-}
+ }
 
 .main-content {
   padding-bottom: 50px;
@@ -34,8 +34,16 @@ img {
 	padding-top: 50px;
 	padding-bottom: 10px;
   height: 550px;
+  
 }
 
+
+.feat-img {
+  padding: 10px;
+  border: solid 1px #d9e4ea;
+ 
+
+}
 
 
 /*Styles heading and navigation*/
