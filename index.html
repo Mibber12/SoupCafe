@@ -3,64 +3,51 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Soup!</title>
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
-	</script>
-	<script src="soup.js"></script>	
+	<title>De Soepkantine</title>
+	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link href='https://fonts.googleapis.com/css?family=Helvetica' rel='stylesheet' type='text/css'>
 </head>
 <body>
-	<div class="container">
-			<header>
-				<nav>
-					<!--current?-->
-
-					<ul class="nav-animate"> 
-						<li class='nav-item'><a href="index.html">Welkom</a></li>
-						<li class='nav-item'><a href="soepmenu.html">Soepmenu</a></li>
-						<li class='nav-item'><a href="catering.html">Catering</a></li>
-						<li class='nav-item'><a href="contact.html">Contact</a></li>
-					</ul> 
-					<div>
-						<img src="img/logosoepkantine.jpg" alt="logo soepkantine" id="header-logo">
+	<div class="wrap">
+		<header class="main-header">
+			<div class="container clearfix">
+				<h1 class="name"><a href="#">De Soepkantine</a></h1>
+						<ul class="main-nav">
+							<li class='nav-item'><a href="index.html">Welkom</a></li>
+							<li class='nav-item'><a href="soepmenu.html">Soepmenu</a></li>
+							<li class='nav-item'><a href="catering.html">Catering</a></li>
+							<li class='nav-item'><a href="contact.html">Contact</a></li>
+						</ul> 
+			
+				<div id="open-dicht"></div>
+			</div>	
+		</header>
+		<div class="container">
+			
+					<h2 id="Welkom">Welkom</h2>
+					<p>Wij van de Soepkantine houden van Soep! We serveren huisgemaakte, verse soepen in de vorm van een menu dat altijd bestaat uit soep met lekker brood. Maar je kunt de soep ook zonder brood bestellen. En als je onze soep mee wilt nemen dan is dat ook geen probleem.</p>
+					<div class="primary col">
+					<h2>Ook hebben wij</h2>
+					<p>Verse salades en smoothies. Onze Doe-het-zelf broodjes mag je naar keuze zelf van beleg voorzien. Wil je daar ook thee, spa, frisdrank bij? Natuurlijk kan dat.
+					<br>Wil je in plaats van een broodje een stuk taart? Onze chocolade taart, cheesecake of carrotcake staat in de koeling voor je klaar!</p>
 					</div>
-				</nav>
-				<div id="main-header">
-					<h1>Soup!</h1>	
-				</div>
-				<div id="open-dicht">
-				</div>			
-			</header>	
-		<div class="main-content">
-			<div>
-				<h2 id="Welkom">Welkom</h2>
-				<p>Wij van Soup! houden van Soep! We serveren huisgemaakte, verse soepen in de vorm van een menu dat altijd bestaat uit soep met lekker brood. Maar je kunt de soep ook zonder brood bestellen. En als je onze soep mee wilt nemen dan is dat ook geen probleem.</p>
-				<p><br>Naast heerlijke soepen serveren wij ook:</br></p>
-				<ul>
-					<li>verse salades</li>
-					<li>smoothies</li>
-					<li>doe-het-zelf broodjes met beleg naar keuze</li>
-					<li>Lavazza koffie</li>
-					<li>thee, sap en frisdranken</li>
-					<li>taart</li>
-				</ul>
-				<p>Ieder week wisselt het menu. Er is voor ieder wat wils, er zijn vlees- en/of kippensoepen, en vegetarische soepen. Er staat altijd minimaal één soep op het menu die geschikt is voor veganisten en voor mensen die gluten- of lactosevrij eten.</p>
-			 	<img class="feat-img" src="img/soup2.jpg" alt="snijplank met groenten in de soepkantine">
-			 	<p>Soup! schenkt ook heerlijke koffie. Espresso, Cortado, Cappuccino, Latte Macchiato en een lekkere mok koffie verkeerd. Een stuk cheesecake of een truffel bij de koffie is ook mogelijk. Drink je geen koffie? Dan hebben wij thee, melk, mineraalwater en biologische sapjes voor jou.</p>
-				
-			</div>	 		
-		</div>	
-		<footer> 
-			<div class="footer-social">
-					<a href="https://www.facebook.com/DeSoepkantine"><img src="img/Facebook_logo.png" alt="Facebooklogo_desoepkantine"></a>
-					<a href="https://twitter.com/desoepkantine"><img src="img/TwitterLogo.png" alt="Twitterlogo_desoepkantine"></a>
-			</div>	
-			<div class="footer-info">	
-					<li>Gierstraat 000 2011 GD Haarlem</li>
-					<li><a href="tel://+31061234567">tel:+31 061234567</a></li>
-					<li><a href="mailto:info@soup.nl">info@soup.nl</a></li>
-			</div>	
-		</footer>	
-	</div>
+					<div class="secondary col">			
+					<h2>Elke week een andere heerlijke soep</h2>
+					<p>Ieder week wisselt het menu. Er is voor ieder wat wils, er zijn vlees- en/of kippensoepen en vegetarische soepen. Er staat altijd minimaal één soep op het menu die geschikt is voor veganisten en voor mensen die gluten- of lactosevrij eten.</p>
+					</div>
+					<img class="feat-img" src="img/soup2.jpg" alt="snijplank met groenten in de soepkantine">
+					<h2>En er is altijd koffie</h2>
+			 		<p>De Soepkantine schenkt ook heerlijke koffie. Espresso, Cortado, Cappuccino, Latte Macchiato en een lekkere mok koffie verkeerd. Een stuk cheesecake of een truffel bij de koffie is ook mogelijk. Drink je geen koffie? Dan ...</p>
+			 		</div>
+				 	
+		</div>
+		<footer class="main-footer">
+			<span>&copy;2016 De Soepkantine</span>
+		</footer>
+	
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
+	</script>
 </body>
-</html>
+</html>			 		

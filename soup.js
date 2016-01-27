@@ -10,7 +10,7 @@ var checkOpenStatus = function () {
     var date = d.getHours();
     var day = d.getDay();
     if ((date > 9) && (date < 20) && (day != 0)) {
-        y = "<span style=\"color:#FFFFFF\">We zijn open en de soep staat klaar.</span>";
+        y = "<span style=\"color:#FFFFFF\">We zijn open en de soep staat klaar!</span>";
     } else {
         y = "<span style=\"color:#FFFFFF\">Sorry, we zijn gesloten.</span>";
     }

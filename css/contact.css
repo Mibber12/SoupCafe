@@ -1,11 +1,12 @@
 /*Main styles*/
-body,
-html {
-  text-align: center;
-  background-color: #fff;
-  font-family:'Quicksand', serif;
-  font-size: 18px;
 
+body {
+  line-height: 1.6;
+  color: #3a3a3a;
+  font-family: "Open Sans","Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
+  color: #222;
+  font-size: 0.95rem;
+  font-weight: 300;
 }
 
 /*Styles heading and navigation*/

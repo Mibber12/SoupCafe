@@ -425,3 +425,20 @@ td,
 th {
   padding: 0;
 }
+
+/* Lists
+   ========================================================================== */
+
+/**
+ * Remove most default list styles, padding and margins.
+*/
+
+ol, 
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  }
+
+
+

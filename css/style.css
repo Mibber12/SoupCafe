@@ -1,166 +1,81 @@
-/*Main styles*/
-body,  
-html {
-  position: relative;
-  min-height: 100%;
+
+/* ================================= 
+  Base Element Styles
+==================================== */
+
+* {
+
+ box-sizing: border-box;
+}
+
+body {
+  line-height: 1.6;
+  font-family: "Open Sans","Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
+  font-size: 0.95rem;
+  font-weight: 300;
+}
+
+a { 
+  color: #fff;
+  text-decoration: none;
+}
+
+p:last-child {
+  margin-bottom: 0;
+
+}
+
+.name a,
+.main-nav a {
+  padding: 10px 25px;
+  display: inline-block;
+  color: #FFF;
+
+}
+
+
+
+/* ================================= 
+  Base Layout Styles
+==================================== */
+
+/* ---- Layout Containers ---- */
+
+.main-header {
+  
   text-align: center;
-  font-family: 'ArcherPro', sans-serif;
-  font-weight: bold;
-  font-size: 19px;
-  color: #000;
+  padding-top: 5px;
+  padding-bottom: 1px;
+  margin-top: -5px;
+  background: #3366CC  url('../img/soup1.jpg') no-repeat center center fixed;
+  background-size: cover;
+  height: 850px;  
 }
 
-.welkom ul {
-   list-style: none;
-}
+/* ---- Page Elements ---- 
 
-p {
-   width: 600px;
-   margin: 0 auto;
- }
-
-.main-content {
-  padding-bottom: 50px;
-}
-
-.main-content ul li{
-  list-style: none;
-}
 
 /*Styles images*/
 
-img {
-	max-width: 100%;
-	margin-bottom: 20px;
-	margin-top: 20px;
-	padding-top: 50px;
-	padding-bottom: 10px;
-  height: 550px;
-  
+
+/* ================================= 
+  Layout navigation
+==================================== */
+.name {
+  margin: 0;
 }
 
+/* ================================= 
+  Base Layout Styles
+==================================== */
 
-.feat-img {
-  padding: 10px;
-  border: solid 1px #d9e4ea;
- 
+/* ---- Layout Containers ---- */
 
+
+.container {
+  padding-left: 1em;
+  padding-right: 1em;
 }
-
-
-/*Styles heading and navigation*/
-
-nav {
-	position: fixed;
-	margin-bottom: 10px;
-	top: 0;
-	z-index: 170;
-	padding: 5px;
-	width: 100%;
-	background-color: rgba(255, 255, 255, 255);
-	word-spacing: 1em;
-	font-size: 20px;
-
-}	
-
-.nav-animate {
-  	text-align: center;
-  	font-weight: 500;
-  	letter-spacing: 1px;
-}
-
-.nav-animate * {
-  	box-sizing: border-box;
-  	transition: all 0.35s ease;
-}
-
-.nav-animate li {
-  	display: inline-block;
-  	list-style: none;
-  	margin: 0.5em 1.5em;
-  	padding: 0;
-    font-weight: bold;
-}
-
-.nav-animate a {
-    padding: 0.3em 0;
-  	color: #000;
-  	position: relative;
-  	text-decoration: none;
-}
-
-.nav-animate a:before,
-.nav-animate a:after {
-	 height: 2px;
-	 position: absolute;
-	 content: '';
-	 transition: all 0.35s ease;
-	 background-color: #000000;
-	 width: 0;
-}
-
-.nav-animate a:before {
-    top: 0;
-  	left: 0;
-}
-
-.nav-animate a:after {
-  	bottom: 0;
-  	right: 0;
-}
-
-.nav-animate a:hover, .nav-animate .current a {
- 	  color: #000000;
-}
-
-.nav-animate a:hover:before,
-.nav-animate .current a:before,
-.nav-animate a:hover:after,
-.nav-animate .current a:after {
-  width: 100%;
-}
-
-h1 {
-  color: #FFFFFF;
-  line-height: 1.3em;
-  border-bottom: 2px solid;
-  
-  display: inline-block;
-  font-family: 'Vidaloka', serif;
-}
-
-
-h2 {
-  font-size: 25px;
-  font-weight: bold;
-  }
-
-
-#main-header {
-  font-size: 6.625rem;
-  color: #FFFFFF;
-  background-color: #ffa949;
-  margin-top: 25px;
-  padding-top: 75px;
-  padding-bottom: 200px;
-  height: 350px;
-  background: #3366CC url('../img/soup1.jpg') no-repeat center;
-  background-size: cover; 
-  display:none;  
-  letter-spacing: 10px;
-}
-
-
-#header-logo {
-  float:left;
-  width:140px;
-  height:135px;
-  position: relative;
-  margin-bottom: -15px;
-  margin-top: -140px;
-  padding-top: 35px;
-}
-
 
 #open-dicht {
    position: relative;
@@ -170,41 +85,89 @@ h2 {
    bottom: 50px;
 }
 
+h1 {
+  color: #FFFFFF;
+  line-height: 1.3em;
+  border-bottom: 2px solid;
+  display: inline-block;
+  font-family: 'Vidaloka', sans-serif;
 
-/*Styles footer*/
-footer {
-    position: relative;
-    top:10px;
-    height: 100px;
-    width: 100%;
-    border-top: 1px solid; 
 }
 
-.footer-info {
-    letter-spacing: 0.5px;
-    word-spacing: 2px;
-    font-size: 15px;
-}
+h2 {
+  font-weight: normal;
 
-.footer-info li {
-    list-style: none;
-    display: inline;
-}
-
-.footer-social img {
-  width: 50px;
-  height: 50px;
-  display: inline;
 }
 
 
-/*media queries*/
+/* ================================= 
+  Styles footer
+==================================== */
+.main-footer {
+   text-align: center;
+   padding:1em 0;
+   background: #0072CE;
+   color:#FFF;
+   margin-top: 20px;
+  
+}
 
-@media all and (max-width: 960px) and (min-width: 481px) {
+/* ================================= 
+  Media queries
+==================================== */
 
-body {
-    background-color: #FFFFFF;
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (min-width: 769px) {
+
+  .wrap {
+    min-height: calc(100vh - 89px);
   }
+
+  .container {
+    width: 70%;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+.name,
+.main-nav,
+.main-nav li {
+  display: inline-block;
 }
 
+.name {
+  margin: 40px;
 
+}
+
+.col {
+  display: inline-block;
+  width: 50%;
+  margin-right: -10px;
+  vertical-align: top;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.feat-img {
+    width: 850px;
+    text-align: center;
+    margin-top: 5px;
+    margin-right: 50px;
+    margin-bottom: 25px;
+    padding: 10px;
+    border: solid 1px #d9e4ea;
+    border-radius: 25px;
+
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+
+}
+
+}
