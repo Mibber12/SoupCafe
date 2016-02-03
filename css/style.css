@@ -6,19 +6,21 @@
 * {
 
  box-sizing: border-box;
+
 }
 
 body {
   line-height: 1.6;
-  font-family: "Open Sans","Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
-  font-size: 0.95rem;
-  font-weight: 300;
+  font-family: 'Lato', sans-serif;
+  font-size: 15px;
+  font-weight: 100;
 }
 
-a { 
-  color: #fff;
-  text-decoration: none;
+h2 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 17px;
 }
+
 
 p:last-child {
   margin-bottom: 0;
@@ -29,11 +31,49 @@ p:last-child {
 .main-nav a {
   padding: 10px 25px;
   display: inline-block;
-  color: #FFF;
+  text-decoration: none;
+  font-size: 20px;
+  color:#fff;
+
+}
+  
+.mainheader-logo {
+  float:left;
+  width:140px;
+  height:135px;
+  position: absolute;
+  text-align: center;
+  margin-left: 35px;
+  margin-top: 35px;
 
 }
 
+.sm-img { 
+  float: right;
+  position: relative; 
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  margin-right: 35px;
+  margin-top: 35px;
+}
 
+
+img {
+    max-width: 100%;
+    text-align: center;
+    margin-top: 5px;
+    margin-right: 50px;
+    margin-bottom: 25px;
+    padding: 10px;
+    border: solid 1px #d9e4ea;
+    border-radius: 25px;
+
+}
+
+.feat-img {
+  margin-top: 20px;
+}
 
 /* ================================= 
   Base Layout Styles
@@ -44,18 +84,17 @@ p:last-child {
 .main-header {
   
   text-align: center;
-  padding-top: 5px;
+  min-height: 1px;
   padding-bottom: 1px;
-  margin-top: -5px;
-  background: #3366CC  url('../img/soup1.jpg') no-repeat center center fixed;
+  position: relative;
+  background: #fff  url('../img/soepkantine1.jpg') no-repeat center center fixed;
   background-size: cover;
-  height: 850px;  
+  height: 850px; 
+
 }
 
 /* ---- Page Elements ---- 
 
-
-/*Styles images*/
 
 
 /* ================================= 
@@ -63,6 +102,7 @@ p:last-child {
 ==================================== */
 .name {
   margin: 0;
+
 }
 
 /* ================================= 
@@ -85,20 +125,6 @@ p:last-child {
    bottom: 50px;
 }
 
-h1 {
-  color: #FFFFFF;
-  line-height: 1.3em;
-  border-bottom: 2px solid;
-  display: inline-block;
-  font-family: 'Vidaloka', sans-serif;
-
-}
-
-h2 {
-  font-weight: normal;
-
-}
-
 
 /* ================================= 
   Styles footer
@@ -112,9 +138,6 @@ h2 {
   
 }
 
-/* ================================= 
-  Media queries
-==================================== */
 
 /* ================================= 
   Media Queries
@@ -136,31 +159,14 @@ h2 {
 .main-nav,
 .main-nav li {
   display: inline-block;
+
+ 
+
+
 }
 
 .name {
   margin: 40px;
-
-}
-
-.col {
-  display: inline-block;
-  width: 50%;
-  margin-right: -10px;
-  vertical-align: top;
-  padding-left: 1em;
-  padding-right: 1em;
-}
-
-.feat-img {
-    width: 850px;
-    text-align: center;
-    margin-top: 5px;
-    margin-right: 50px;
-    margin-bottom: 25px;
-    padding: 10px;
-    border: solid 1px #d9e4ea;
-    border-radius: 25px;
 
 }
 
@@ -170,4 +176,3 @@ h2 {
 
 }
 
-}

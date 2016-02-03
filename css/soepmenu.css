@@ -1,106 +1,173 @@
-/*Main styles*/
+
+/* ================================= 
+  Base Element Styles
+==================================== */
+
+* {
+
+ box-sizing: border-box;
+
+}
 
 body {
   line-height: 1.6;
-  color: #3a3a3a;
-  font-family: "Open Sans","Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
-  color: #222;
-  font-size: 0.95rem;
-  font-weight: 300;
+  font-family: 'Lato', sans-serif;
+  font-size: 15px;
+  font-weight: 100;
 }
 
-/*Styles heading and navigation*/
-
-nav {
-	position: auto;
-	width: 1000px;
-	margin: auto;
-	top: 0;
-	z-index: 170;
-	padding-top: 20px;
-	width: 100%;
-	background-color: rgba(255, 255, 255, 255);
-	word-spacing: 1em;
-	font-size: 18px;
-}	
-
-.navbar li {
-  	display: inline-block;
-  	margin: 0.5em 1.5em;
-  	padding: 0;
-  	padding-bottom: 5px; 	
+h2 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 17px;
 }
 
-.navbar a {
-  	padding: 0.3em 0;
-  	color: #333;
-  	position: relative;
-  	text-decoration: none;
+a { 
+  color: #fff;
+  text-decoration: none;
 }
 
-.navbar ul li {
-	list-style: outside none none;
-}
-
-h1 {
-	font-family:'Quicksand', serif;
-  font-size: 36px;
-  line-height: 50px; 
-  border-bottom: 1px solid;
+p:last-child {
+  margin-bottom: 0;
 
 }
 
-/*Styles image*/
+.name a,
+.main-nav a {
+  padding: 10px 25px;
+  display: inline-block;
+  color: #FFF;
 
-.feat-img {
-  max-width: 100%;
-  margin-bottom: 20px;
-  margin-top: 20px;
-  padding-top: 50px;
-  padding-bottom: 10px;
-  height: 550px;
-  padding: 10px;
-  border: solid 1px #d9e4ea;
+}
+
+.mainheader-logo {
+  float:left;
+  width:140px;
+  height:135px;
+  position: relative;
+  display: inline-block;
+  margin-left: 35px;
+  margin-top: 35px;
 
 }
 
 
-/*styles footer*/
+img {
+    max-width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    margin-right: 50px;
+    margin-bottom: 25px;
+    padding: 10px;
+    border: solid 1px #d9e4ea;
+    border-radius: 25px;
 
+}
+
+/* ================================= 
+  Base Layout Styles
+==================================== */
+
+/* ---- Layout Containers ---- */
+
+.main-header {
+  
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 1px;
+  margin-top: -5px;
+  background: #3366CC  url('../img/soepkantine7.jpg') no-repeat center center fixed;
+  background-size: cover;
+  height: 850px;  
+}
+
+/* ---- Page Elements ---- 
+
+
+/*Styles images*/
+
+
+/* ================================= 
+  Layout navigation
+==================================== */
+.name {
+  margin: 0;
+}
+
+/* ================================= 
+  Base Layout Styles
+==================================== */
+
+/* ---- Layout Containers ---- */
+
+
+.container {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+#open-dicht {
+   position: relative;
+   z-index: 2;
+   line-height: 50px;
+   background: transparent;
+   bottom: 50px;
+}
+
+
+/* ================================= 
+  Styles footer
+==================================== */
 .main-footer {
-
-	width: 100%;
-	padding-top: 60px;
-	padding-bottom: 60px;
-	margin-top: 30px;
-	border-top: 1px solid;
-	position: absolute;
-	
+   text-align: center;
+   padding:1em 0;
+   background: #0072CE;
+   color:#FFF;
+   margin-top: 20px;
+  
 }
 
 
-.main-footer ul{
-    list-style: none;
-    margin: 0;
-    padding: 0;
+/* ================================= 
+  Media Queries
+==================================== */
 
-}
+@media (min-width: 769px) {
 
-.main-footer ul li {
-    display: inline;
-    letter-spacing: 0.5px;
-    word-spacing: 2px;
-    font-size: 15px;
-
-
-}
-
-
-/*media queries*/
-
-@media all and (max-width: 960px) and (min-width: 481px) {
-
-body {
-    background-color: #FFFFFF;
+  .wrap {
+    min-height: calc(100vh - 89px);
   }
+
+  .container {
+    width: 70%;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+.name,
+.main-nav,
+.main-nav li {
+  display: inline-block;
 }
+
+.name {
+  margin: 40px;
+
+}
+
+.col {
+  display: inline-block;
+  width: 50%;
+  margin-right: -10px;
+  vertical-align: top;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+
+}
+
