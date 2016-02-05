@@ -12,13 +12,14 @@
 body {
   line-height: 1.6;
   font-family: 'Lato', sans-serif;
-  font-size: 15px;
-  font-weight: 100;
+  font-size: 17px;
+  font-weight: 200;
 }
 
 h2 {
-    font-family: 'Roboto Slab', serif;
-    font-size: 17px;
+    font-family: 'Lato', sans-serif;
+    color: #000;
+    font-weight: 300;
 }
 
 
@@ -33,10 +34,10 @@ p:last-child {
   display: inline-block;
   text-decoration: none;
   font-size: 20px;
+  font-weight: bold;
   color:#fff;
 
 }
-  
 .mainheader-logo {
   float:left;
   width:140px;
@@ -56,6 +57,7 @@ p:last-child {
   display: inline-block;
   margin-right: 35px;
   margin-top: 35px;
+ 
 }
 
 
@@ -68,11 +70,20 @@ img {
     padding: 10px;
     border: solid 1px #d9e4ea;
     border-radius: 25px;
-
+    
 }
 
 .feat-img {
+  display: block;
   margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  border: solid 1px #d9e4ea;
+  border-radius: 25px;
+  width: 600px;
+  height: 350px;
+
 }
 
 /* ================================= 
