@@ -16,6 +16,18 @@ body {
   font-weight: 200;
 }
 
+h1 {  
+  font-size: 9.625rem; 
+  font-family: 'Helvetica', sans-serif;
+  line-height: 1.3; 
+  text-shadow: 0 1px 1px rgba(0,0,0,.8);
+  margin-top: 100px;
+  color: #fff;
+  padding: 10px;
+  letter-spacing: 2px;
+  
+}
+
 h2 {
     font-family: 'Lato', sans-serif;
     color: #000;
@@ -28,6 +40,16 @@ p:last-child {
 
 }
 
+ aside {
+    float: left;
+    text-align: center;
+    padding: 25px;
+    background-color: #fff;
+
+}
+
+
+
 .name a,
 .main-nav a {
   padding: 10px 25px;
@@ -37,22 +59,24 @@ p:last-child {
   font-weight: bold;
   color:#fff;
 
+
 }
+
 .mainheader-logo {
-  float:left;
-  width:140px;
-  height:135px;
-  position: absolute;
+  
+  display: block;
   text-align: center;
   margin-left: 35px;
   margin-top: 35px;
+  width: 150px; 
+  height: 150px;
 
 }
 
 .sm-img { 
   float: right;
   position: relative; 
-  width: 50px;
+  max-width: 100%;
   height: 50px;
   display: inline-block;
   margin-right: 35px;
@@ -166,13 +190,15 @@ img {
     margin: 0 auto;
   }
 
-.name,
+  .mainheader-logo {
+    float: left;
+}
+
+
 .main-nav,
 .main-nav li {
   display: inline-block;
-
- 
-
+  
 
 }
 
@@ -187,3 +213,13 @@ img {
 
 }
 
+}
+
+@media (min-width: 1025px) {
+  
+  .container {
+    width: 80%;
+    max-width: 1150px;
+  }
+
+ 
