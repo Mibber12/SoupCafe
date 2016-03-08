@@ -10,9 +10,9 @@
 }
 
 body {
- 
-  font-family: "Open Sans","Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
-  font-size: 16px;
+  font-family: 'Lato', sans-serif;
+  font-size: 17px;
+  font-weight: 400;
   
 }
 
@@ -23,7 +23,6 @@ body {
 
 
  aside {
-    
     float: left;
     text-align: center;
     background-color: #fff;
@@ -119,6 +118,9 @@ background-color: #fff;
 }
 
 
+.top-buffer 
+
+{ margin-top:20px; }
 
 article {
     padding: 10px;
@@ -161,8 +163,10 @@ article p {
 ==================================== */
 
 
-h1 {
+h1, h2, h3, h4 {
   color: #000;
+  text-align: center;
+  font-weight: bold;
 }
 
 
@@ -182,7 +186,19 @@ h1 {
     text-align: center;
 }
 
-
+.google-maps {
+        position: relative;
+        padding-bottom: 75%; 
+        height: 0;
+        overflow: hidden;
+}
+.google-maps iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100% !important;
+        height: 100% !important;
+ }
 
 /* ================================= 
   Layout navigation
