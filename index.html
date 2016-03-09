@@ -8,14 +8,15 @@
     <!-- Latest compiled and minified CSS -->
    
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <link href='https://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     
 </head>
   
 <body>
-    <header>
+    <header id="top">
+        
         <nav class="navbar navbar-inverse navbar-fixed-top cbp-af-header" 
              role="navigation">
             <div class="container-fluid">
@@ -29,7 +30,7 @@
                         <span class="icon-bar"></span>
                     </button>
 
-                      <a class="navbar-brand" href="index.html"><p>de</p><p>Soepkantine</p></a>
+                      <a class="navbar-brand" href="#top"><p>de</p><p>Soepkantine</p></a>
                        
                       
                    
@@ -38,10 +39,10 @@
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="index.html">Welkom</a></li>
-                        <li><a href="soepmenu.html">Soepmenu</a></li>
-                        <li><a href="catering.html">Catering</a></li>
-                        <li><a href="contact.nl">Contact</a></li>
+                        <li><a href="#welkom">Welkom</a></li>
+                        <li><a href="#soepmenu">Soepmenu</a></li>
+                        <li><a href="#catering">Catering</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul> 
                 </div><!-- /.navbar-collapse -->
             </div><!-- /.container-fluid -->
@@ -51,12 +52,14 @@
 <div class="container-fluid">
 
         <section class="row title-row">
-            <div class="fill-screen" style="background-image: url(img/soepkantine1.jpg)">
+            <div class="fill-screen stellar-bg"
+                 style="background-image: url(img/soepkantine1.jpg)"
+                 data-stellar-background-ratio="0.2">
                 
 
                 <div class="down-button">
                     <a class="btn" href="#welkom">
-                        <i class="fa fa-arrow-circle-down fa-4x"></i>
+                        <i class="fa fa-arrow-circle-o-down fa-5x"></i>
                     </a>
                 </div>
             </div>
@@ -66,7 +69,7 @@
             
                     <div class="col-md-2"></div>
                     <div class="col-md-8">
-                    <h2 id="Welkom">Welkom</h2>
+                    <h2 id="welkom">Welkom</h2>
                     <p>Wij van de Soepkantine houden van Soep! We serveren huisgemaakte, verse soepen in de vorm van een menu dat altijd bestaat uit soep met lekker brood. Maar je kunt de soep ook zonder brood bestellen. En als je onze soep mee wilt nemen dan is dat ook geen probleem.</p>
                     </div>
                     <div class="col-md-2"></div>
@@ -112,11 +115,11 @@
         </section>
         
 
-         <section class="row">
+         <section  class="row">
            
                     <div class="col-md-2"></div>
                     <div class="col-md-8">
-                    <h2>Soepmenu</h3>    
+                    <h2 id="soepmenu">Soepmenu</h3>    
                     <p>Dagelijks staan er vijf soepen op het menu, in een wekelijks wisselend menu. In de zomer hebben we de Indiase Linzensoep en de Mulligatawny (zoete aardappelsoep met mango chutney en appel). In de winter staat verse Erwtensoep klaar op het fornuis. Naast de verschillende soorten soep hebben we standaard twee salades in huis: de Kikkererwtensalade met feta en tomaat, en de Couscoussalade met courgette, olijf en amandel!</p><br>
                     </div>
                     <div class="col-md-2"></div>
@@ -130,7 +133,7 @@
 
             
         <section class="row">
-                    <h2>Catering</h2>
+                    <h2 id="catering">Catering</h2>
                     <div class="col-md-2"></div>
                     <div class="col-md-8">
                     <p>De Soepkantine is al meer dan 2 jaar de soepleverancier van Haarlem en omstreken aan particulieren als aan bedrijven. Heb je voor een feest, een vergadering, of andere gelegenheid een grote hoeveelheid soep nodig, dan zijn wij je partij! Dit kan zowel op eenmalige als op reguliere basis.
@@ -179,11 +182,11 @@
             
         </section>
 
-         <section id="contact" class="row contact">
-            <h2>Contact</h2>
+         <section class="row contact">
+            <h2 id="contact">Contact</h2>
             <p>Gierstraat 4</p>
             <p>2011 GD Haarlem/<p>
-            <p>tel: 06 00000000</p>
+            <p>tel: 0031 636353434</p>
             <p>email: info@soepkantine.nl</p>
         </section>
 
@@ -197,28 +200,21 @@
 
 </div>
 
-
-        
-
-
     <footer class="container-fluid">
         <div class="row">
             <span>&copy;2016 De Soepkantine Gierstraat 4 2011 GD Haarlem</span>
          </div>    
     </footer>
      
-       
- 
-    
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
 <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/bootstrap.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<script src="js/jquery.stellar.js"></script>
 <script src="js/soup.js"></script>
-
-
 
     
 
