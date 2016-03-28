@@ -9,12 +9,15 @@
    
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animate.css">
     <link href='https://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     
 </head>
   
 <body>
+
+
     <header id="top">
         
         <nav class="navbar navbar-inverse navbar-fixed-top cbp-af-header" 
@@ -31,45 +34,114 @@
                     </button>
 
                       <a class="navbar-brand" href="#top"><p>de</p><p>Soepkantine</p></a>
-                       
-                      
+                    
                    
                 </div>
 
-                <!-- Collect the nav links, forms, and other content for toggling -->
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+        <li><a href="#">Link</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+      <form class="navbar-form navbar-left" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Link</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+
+
+
+
+                <!--------
+
+                <!-- Collect the nav links, forms, and other content for toggling
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#welkom">Welkom</a></li>
+                        <li><a href="#welkom">Home</a></li>
                         <li><a href="#soepmenu">Soepmenu</a></li>
                         <li><a href="#catering">Catering</a></li>
+
+                            
+
+
                         <li><a href="#contact">Contact</a></li>
+                        <li><a href="#"><i class="fa fa-facebook-square" style="font-size: 35px"></i></a></li>
                     </ul> 
                 </div><!-- /.navbar-collapse -->
-            </div><!-- /.container-fluid -->
-        </nav>
 
+
+                <!----->
+
+            </div><!-- /.container-fluid -->
+
+     
+       
     </header>
-<div class="container-fluid">
+
+ <div class="container-fluid">
+
 
         <section class="row title-row">
-            <div class="fill-screen stellar-bg"
-                 style="background-image: url(img/soepkantine1.jpg)"
-                 data-stellar-background-ratio="0.2">
-                
 
+
+            
+                <img class="img-responsive" src="img/soepkantine1.jpg" />
+
+               
                 <div class="down-button">
+
+                    <div class="heading wow fadeIn" data-wow-duration="8s"><h1>de Soepkantine</h1></div> 
+                     
                     <a class="btn" href="#welkom">
-                        <i class="fa fa-arrow-circle-o-down fa-5x"></i>
+                        
+                        <i class="fa fa-angle-double-down fa-5x"></i>
                     </a>
+
+                    
                 </div>
-            </div>
+            
+          
+
+
         </section>
 
         <section class="row">
             
                     <div class="col-md-2"></div>
                     <div class="col-md-8">
-                    <h2 id="welkom">Welkom</h2>
+                    <h2 id="welkom">Welkom?????</h2>
                     <p>Wij van de Soepkantine houden van Soep! We serveren huisgemaakte, verse soepen in de vorm van een menu dat altijd bestaat uit soep met lekker brood. Maar je kunt de soep ook zonder brood bestellen. En als je onze soep mee wilt nemen dan is dat ook geen probleem.</p>
                     </div>
                     <div class="col-md-2"></div>
@@ -109,9 +181,9 @@
         </section>
 
         <section class="row">
-             <div class="fill-screen fixed-attachment" style="background-image: url(img/soepkantine2.jpg)">
-            
-            </div>
+             
+
+             <img class="img-responsive" src="img/soepkantine2.jpg" />
         </section>
         
 
@@ -127,7 +199,7 @@
         </section>
 
         <section class="row">
-            <div class="fill-screen fixed-attachment" style="background-image: url(img/soepkantine3.jpg)">
+            <img class="img-responsive" src="img/soepkantine3.jpg" />
             </div>
         </section>
 
@@ -182,22 +254,33 @@
             
         </section>
 
+        <section>
+
+         <div class="fb-page" data-href="https://www.facebook.com/DeSoepkantine" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/DeSoepkantine"><a href="https://www.facebook.com/DeSoepkantine">De Soepkantine</a></blockquote></div>
+        </div>
+
+    </section>
+
          <section class="row contact">
             <h2 id="contact">Contact</h2>
             <p>Gierstraat 4</p>
-            <p>2011 GD Haarlem/<p>
-            <p>tel: 0031 636353434</p>
-            <p>email: info@soepkantine.nl</p>
+            <p>2011 GD Haarlem<p>
+           <p><span class="glyphicon glyphicon-phone"></span> 0031 636353434</p>
+           <span class="glyphicon glyphicon-envelope"></span><a href="mailto:info@soepkantine.nl"> info@soepkantine.nl</a>
         </section>
+
+        <section>
+
+       
+
+        </section>  
 
         <section class="google-maps">
            
                 <iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJz8-J0GrvxUcRXIfx9Zqtl9s&key=AIzaSyCkph2u57ZNECtoLhZEbARSe5Egzj221FM" allowfullscreen></iframe>
             
         </section>
-
-       
-
+</div>
 </div>
 
     <footer class="container-fluid">
@@ -208,15 +291,25 @@
      
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
-<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/bootstrap.js"></script>
 <script src="js/jquery.easing.1.3.js"></script>
 <script src="js/jquery.stellar.js"></script>
+<script src="js/wow.min.js"></script>
 <script src="js/soup.js"></script>
 
-    
+     <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.4";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+
+</script>   
 
 </body>
 </html>                 
