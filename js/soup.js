@@ -1,4 +1,6 @@
-
+ $(document).ready(function () {
+        $('.dropdown-toggle').dropdown();
+    });
 
 $(function () {
     $(window).on("load resize", function () {

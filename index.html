@@ -12,6 +12,9 @@
     <link rel="stylesheet" href="css/animate.css">
     <link href='https://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
     
 </head>
   
@@ -25,87 +28,37 @@
             <div class="container-fluid">
                 <!-- Brand and toggle get grouped for better mobile display -->
                 <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed"
-                            data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
 
-                      <a class="navbar-brand" href="#top"><p>de</p><p>Soepkantine</p></a>
-                    
-                   
+                      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <div class="navbar-brand">
+                            <a href="index.html" class="pull-left"><img class="img-responsive" src="img/logosoepkantine.jpg" width="120" height="110"alt="logo soepkantine"></a>  
+                        </div>
                 </div>
 
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
-        <li><a href="#">Link</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">One more separated link</a></li>
-          </ul>
-        </li>
-      </ul>
-      <form class="navbar-form navbar-left" role="search">
-        <div class="form-group">
-          <input type="text" class="form-control" placeholder="Search">
-        </div>
-        <button type="submit" class="btn btn-default">Submit</button>
-      </form>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Link</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-          </ul>
-        </li>
+            <li class="nav active"><a href="#">Home</a></li>
+            <li><a href="#">Onze soepen</a></li>
+            <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Catering <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                     <li><a href="Catering.html">Bestellijst</a></li>
+                 </ul>
+            </li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="https://www.facebook.com/DeSoepkantine"><i class="fa fa-facebook-square" style="font-size: 35px"></i></a></li>
+      
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
-
-
-
-
-
-                <!--------
-
-                <!-- Collect the nav links, forms, and other content for toggling
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#welkom">Home</a></li>
-                        <li><a href="#soepmenu">Soepmenu</a></li>
-                        <li><a href="#catering">Catering</a></li>
-
-                            
-
-
-                        <li><a href="#contact">Contact</a></li>
-                        <li><a href="#"><i class="fa fa-facebook-square" style="font-size: 35px"></i></a></li>
-                    </ul> 
-                </div><!-- /.navbar-collapse -->
-
-
-                <!----->
-
-            </div><!-- /.container-fluid -->
-
      
        
     </header>
@@ -132,53 +85,63 @@
                     
                 </div>
             
-          
-
+        
 
         </section>
 
         <section class="row">
             
-                    <div class="col-md-2"></div>
-                    <div class="col-md-8">
-                    <h2 id="welkom">Welkom?????</h2>
+                    <aside class="col-sm-2"></aside>
+                     <div class="col-sm-8">
+                    <h3>Wij houden van soep</h3>
                     <p>Wij van de Soepkantine houden van Soep! We serveren huisgemaakte, verse soepen in de vorm van een menu dat altijd bestaat uit soep met lekker brood. Maar je kunt de soep ook zonder brood bestellen. En als je onze soep mee wilt nemen dan is dat ook geen probleem.</p>
                     </div>
-                    <div class="col-md-2"></div>
+                    
+                    <aside class="col-sm-2">
+                        <div class="fb-page" data-href="https://www.facebook.com/DeSoepkantine" data-tabs="timeline" data-width="300px" data-height="400px" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/DeSoepkantine"><a href="https://www.facebook.com/DeSoepkantine">De Soepkantine</a></blockquote></div></div>
+
+                    </aside>
                    
         </section>            
 
         <section class="row">
-                    <div class="col-md-2"></div>
-                    <div class="col-md-8">
+                    <aside class="col-sm-2"></aside>
+                    <div class="col-sm-8">
                     <h3>Elke week een andere heerlijke soep</h3>
                     <p>Ieder week wisselt het menu. Er is voor ieder wat wils, er zijn vlees- en/of kippensoepen en vegetarische soepen. Er staat altijd minimaal één soep op het menu die geschikt is voor veganisten en voor mensen die gluten- of lactosevrij eten.</p>
                     </div>
-                    <div class="col-md-2"></div>  
+                    <aside class="col-sm-2"></aside>
                 
         </section>
 
         <section class="row">
-                    <div class="col-md-2"></div>
-                    <div class="col-md-8">
+                    <aside class="col-sm-2"></aside>
+                    <div class="col-sm-8">
                     <h3>Ook hebben wij</h3>
                     <p>Verse salades en smoothies. Onze Doe-het-zelf broodjes mag je naar keuze zelf van beleg voorzien. Wil je daar ook thee, spa, frisdrank bij? Natuurlijk kan dat.
                     <br>Wil je in plaats van een broodje een stuk taart? Onze chocolade taart, cheesecake of carrotcake staat in de koeling voor je klaar!</p>
                     </div>
-                    <div class="col-md-2"></div>
+                     <aside class="col-sm-2"></aside>
                     
 
         </section>
 
         <section class="row">
-                    <div class="col-md-2"></div>
-                    <div class="col-md-8">
+                    <aside class="col-sm-2"></aside>
+                    <div class="col-sm-8">
                     <h3>En er is altijd koffie</h3>
                     <p>De Soepkantine schenkt ook heerlijke koffie. Espresso, Cortado, Cappuccino, Latte Macchiato en een lekkere mok koffie verkeerd. Een stuk cheesecake of een truffel bij de koffie is ook mogelijk. Drink je geen koffie? Dan ...</p>
                     </div>
-                    <div class="col-md-2"></div>
+                   
+                    <aside class="col-sm-2"></aside>
+                
+                   </aside>
                    
         </section>
+
+
+    
+
 
         <section class="row">
              
@@ -189,12 +152,12 @@
 
          <section  class="row">
            
-                    <div class="col-md-2"></div>
-                    <div class="col-md-8">
-                    <h2 id="soepmenu">Soepmenu</h3>    
+                    <aside class="col-sm-2"></aside>
+                    <div class="col-sm-8">
+                    <h2 id="onze-soepen">Soepen</h3>    
                     <p>Dagelijks staan er vijf soepen op het menu, in een wekelijks wisselend menu. In de zomer hebben we de Indiase Linzensoep en de Mulligatawny (zoete aardappelsoep met mango chutney en appel). In de winter staat verse Erwtensoep klaar op het fornuis. Naast de verschillende soorten soep hebben we standaard twee salades in huis: de Kikkererwtensalade met feta en tomaat, en de Couscoussalade met courgette, olijf en amandel!</p><br>
                     </div>
-                    <div class="col-md-2"></div>
+                    <aside class="col-sm-2"></aside>
                 
         </section>
 
@@ -206,12 +169,12 @@
             
         <section class="row">
                     <h2 id="catering">Catering</h2>
-                    <div class="col-md-2"></div>
-                    <div class="col-md-8">
+                    <aside class="col-sm-2"></aside>
+                    <div class="col-sm-8">
                     <p>De Soepkantine is al meer dan 2 jaar de soepleverancier van Haarlem en omstreken aan particulieren als aan bedrijven. Heb je voor een feest, een vergadering, of andere gelegenheid een grote hoeveelheid soep nodig, dan zijn wij je partij! Dit kan zowel op eenmalige als op reguliere basis.
                     Wat bieden wij? Zoals gezegd: soep. Wij voeren een breed assortiment soepen, ambachtelijk  gemaakt, van vegetarisch en veganistisch tot oud Hollandse erwtensoep en verschillende kippensoepen. Naast soep voeren wij nog een klein assortiment aan salades en taart.</p><br>
                     </div>
-                    <div class="col-md-2"></div>
+                    <aside class="col-sm-2"></aside>
         </section>
         
         <section class="row top-buffer">
@@ -240,7 +203,7 @@
         <section class="row top-buffer">
                 <div class="col-md-3"></div>
                 <div class="col-md-3"><h4>Mulligatawny</h4></div>
-                <div class="col-md-3 text-left">Een overheerlijke zoete aardappelsoep met groente, mango chutney, appel en  curry poeder Harira / Carribische groentesoep</div>
+                <div class="col-md-3 text-left">Een overheerlijke zoete aardappelsoep met groente, mango chutney, appel en  curry poeder Harira / Caribische groentesoep</div>
                 <div class="col-md-3"></div>
         </section>
                 
@@ -251,29 +214,27 @@
                     Wij cateren zowel op incidentele als op reguliere basis. Heb je een feestje en wil je lekkere soep, salade en brood voor je gasten? Geen probleem. Wil je als organisatie je medewerkers of gasten elke dag heerlijke soep serveren? Ook geen probleem. Heb je speciale wensen die buiten ons assortiment vallen? Alles is bespreekbaar, we kunnen quiches en appeltaarten voor je bakken, een Indiaas buffet koken en lekkere toetjes klaarmaken. In overleg leveren wij ook soepketels, soepkommen en etcetera. En mocht er behoefte zijn aan mensen die serveren: kan ook! Mocht je interesse hebben in onze catering, stuur een mail naar <a href="mailto:info@soepkantine.nl">info@soepkantine.nl</a></p></div>
                     
                     <div class="col-md-2"></div>
-            
-        </section>
-
-        <section>
-
-         <div class="fb-page" data-href="https://www.facebook.com/DeSoepkantine" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/DeSoepkantine"><a href="https://www.facebook.com/DeSoepkantine">De Soepkantine</a></blockquote></div>
-        </div>
 
     </section>
 
-         <section class="row contact">
-            <h2 id="contact">Contact</h2>
-            <p>Gierstraat 4</p>
-            <p>2011 GD Haarlem<p>
-           <p><span class="glyphicon glyphicon-phone"></span> 0031 636353434</p>
-           <span class="glyphicon glyphicon-envelope"></span><a href="mailto:info@soepkantine.nl"> info@soepkantine.nl</a>
-        </section>
 
-        <section>
 
-       
+                <section class="row contact">
+                    <aside class="col-sm-2"></aside>
+                    <div class="col-sm-8">
+                    <h2 id="contact">Contact</h2>
+                    <p>Gierstraat 4</p>
+                    <p>2011 GD Haarlem<p>
+                    <p><span class="glyphicon glyphicon-phone"></span> 0031 636353434</p>
+                    <span class="glyphicon glyphicon-envelope">
+ 
+                    </span><a href="mailto:info@soepkantine.nl"> info@soepkantine.nl</a>
+                    </div>
 
-        </section>  
+                    <aside class="col-sm-2"></aside>
+                    
+                </section> 
+
 
         <section class="google-maps">
            
@@ -291,12 +252,9 @@
      
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
 <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
 <script src="js/bootstrap.js"></script>
 <script src="js/jquery.easing.1.3.js"></script>
-<script src="js/jquery.stellar.js"></script>
 <script src="js/wow.min.js"></script>
 <script src="js/soup.js"></script>
 
