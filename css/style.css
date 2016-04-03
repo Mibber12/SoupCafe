@@ -62,13 +62,7 @@ body {
   border:none;
 }
 
-.navbar-brand {
-  font-size: 40px;
-  font-family: "Lato", sans-serif;
-  font-style: bold;
-  
 
-}
  
  .nav.navbar-nav.navbar-right li a {
     color: #000;
@@ -135,17 +129,15 @@ ul.nav a:hover { color: #000 !important; }
 
 
 aside {
-  text-align: center;
-  padding-top: 40px;
-  padding-right: 50px;
+ 
+ 
 }
 
 .navbar-brand {
+margin-top: -60px;
 
-  
+
 }
-
-
 
 /* ================================= 
   Base Layout Styles
@@ -179,6 +171,12 @@ padding-top: 100px;
 
 }
 
+.info {
+font-size: 13px;
+margin-left: 20px;
+margin-top: -10px;
+
+}
 
 .text-banner {
     text-align: center;
@@ -231,10 +229,13 @@ padding-top: 100px;
   .fb_iframe_widget span{        
         overflow: initial !important;
     }
-  .fb_iframe_widget iframe{        
-        width: 200px !important;
-        height: 300px !important;    
+  .fb_iframe_widget iframe{  
+        padding-left: 30px; 
+        margin-top: 40px;     
+        width: 250px !important;
+        height: 350px !important;    
     }
+
 
 
 /* ================================= 
