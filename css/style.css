@@ -62,7 +62,6 @@ body {
   border:none;
 }
 
-
  
  .nav.navbar-nav.navbar-right li a {
     color: #000;
@@ -112,7 +111,7 @@ ul.nav a:hover { color: #000 !important; }
 
 .down-button {
   position: absolute;
-  bottom: 40px;
+  bottom: 5px;
   width: 100%;
   text-align: center;
 
@@ -120,6 +119,7 @@ ul.nav a:hover { color: #000 !important; }
 
 .down-button i {
   color: #fff;
+ 
 
 }
 
@@ -127,11 +127,6 @@ ul.nav a:hover { color: #000 !important; }
 
 { margin-top:20px; }
 
-
-aside {
- 
- 
-}
 
 .navbar-brand {
 margin-top: -60px;
@@ -167,12 +162,16 @@ h2, h3, h4 {
 }
 
 h2 {
-padding-top: 100px;
+padding-top: 50px;
 
 }
 
+section {
+  padding-bottom: 10px;
+}
+
 .info {
-font-size: 13px;
+font-size: 14px;
 margin-left: 20px;
 margin-top: -10px;
 
@@ -232,11 +231,15 @@ margin-top: -10px;
   .fb_iframe_widget iframe{  
         padding-left: 30px; 
         margin-top: 40px;     
-        width: 250px !important;
-        height: 350px !important;    
+        width: 260px !important;
+        height: 380px !important; 
+        background-color: #fffff;   
     }
 
 
+.fb-comments, .fb-comments span, .fb-comments.fb_iframe_widget span iframe {
+     width: 100% !important;
+ }
 
 /* ================================= 
   Styles footer
