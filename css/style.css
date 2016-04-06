@@ -1,5 +1,5 @@
 
-/* ================================= 
+/* =================================
   Base Element Styles
 ==================================== */
 
@@ -13,8 +13,7 @@ body {
   font-family: 'Lato', sans-serif;
   font-size: 17px;
   font-weight: 400;
-  padding-top: 70px;
-  
+  padding-top: 100px; /** iets meer ruimte gegeven **/
 }
 
 html,
@@ -39,8 +38,8 @@ body {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  
- 
+
+
 }
 
 .center-block img {
@@ -56,39 +55,49 @@ body {
 
 .navbar {
   margin-bottom: 0px;
-  padding: 30px 15px;
-    -webkit-transition: all 0.5s;
-    transition: all 0.5s;
+  padding: 30px 0;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
   border:none;
 }
 
- 
+.navbar-nav {
+  margin: 15px -15px;
+  background-color: #FFF;
+}
+
  .nav.navbar-nav.navbar-right li a {
+   /** deze selector hierboven is wel erg specifiek, waardoor het lastiger is om deze te overschrijven als je dat later wilt! Probeer zo min mogelijk specifiek te zijn. Het is een kunst :) -->
+   **/
     color: #000;
-    padding-top: 30px;
+    /** padding-top: 30px; **/
     font-weight: bold;
-    font-size: 18px; 
-   
+    font-size: 18px;
+    border: 1px solid #FFF; /** onzichtbaar randje toegevoegd zodat bij een hover of een focus de tekst niet stiekem verspringt **/
 }
 
-.navbar-inverse .navbar-brand {
-    color: #000;
-    
+.nav.navbar-nav.navbar-right li a:hover,
+.nav.navbar-nav.navbar-right li a:focus {
+  background: #FFF;
+  border: 1px solid #000;
 }
-
 
 .navbar-inverse {
 background-image: none;
 background-color: #fff;
+}
 
+.navbar-toggle {
+  border-color: #000;
+  background-color: #fff;
 }
 
 .navbar-toggle .icon-bar {
-    background-color: #fff;
+    background-color: #000;
 }
 
 .navbar-toggle:hover {
-    background-color: #fff;
+    background-color: #000;
 }
 
 .navbar-toggle:hover .icon-bar {
@@ -119,29 +128,44 @@ ul.nav a:hover { color: #000 !important; }
 
 .down-button i {
   color: #fff;
- 
+
 
 }
 
-.top-buffer 
-
-{ margin-top:20px; }
-
+.top-buffer { margin-top:20px; }
 
 .navbar-brand {
-margin-top: -60px;
-
-
+  max-width: 70%;
+  padding: 0px 15px; /** padding top en bottom maakte dat het plaatje te laag kwam te staan ten opzichte van de menuknop **/
 }
 
-/* ================================= 
+.navbar-brand img {
+  height: 50px; /** zelfde hoogte als de bootstrap-menubalk **/
+  width: auto; /** houdt de beeldverhouding goed **/
+}
+@media only screen and (min-width: 768px) {
+    .navbar-brand {
+      margin-top: -30px;
+    }
+
+    .navbar-brand img {
+      width: 250px;
+      height: auto;
+    }
+
+    .navbar-right {
+      margin-right: 15px;
+    }
+}
+
+/* =================================
   Base Layout Styles
 ==================================== */
 h1 {
-  color: #fff; 
+  color: #fff;
   font-family: 'Trocchi', sans-serif;
   font-size: 120px;
-  padding-left: 10px; 
+  padding-left: 10px;
   font-weight: bold;
   display: block;
   margin-left: auto;
@@ -166,15 +190,20 @@ padding-top: 50px;
 
 }
 
-section {
+.row {
   padding-bottom: 10px;
 }
 
-.info {
-font-size: 14px;
-margin-left: 20px;
-margin-top: -10px;
+@media screen and (min-width: 992px) {
 
+  .info-title {
+    font-size: 14px;
+  }
+  .info {
+  font-size: 14px;
+  margin-left: 20px;
+  margin-top: -10px;
+  }
 }
 
 .text-banner {
@@ -189,13 +218,16 @@ margin-top: -10px;
 }
 
 .contact {
-    margin: 50px;
+    /** margin: 50px;
+    weggehaald omdat dit volgens mij teveel witruimte creert op een specifiek element.
+    Ik zou dan eerder een vaste padding zetten op alle 'row' elementen in het 'main' element.
+    Hiermee krijg je een visuele rust die je niet krijgt als je per blok een margin of padding zet. **/
     text-align: center;
 }
 
 .google-maps {
         position: relative;
-        padding-bottom: 75%; 
+        padding-bottom: 75%;
         height: 0;
         overflow: hidden;
 }
@@ -207,12 +239,12 @@ margin-top: -10px;
         height: 100% !important;
  }
 
-/* ================================= 
+/* =================================
   Layout navigation
 ==================================== */
 
 
-/* ================================= 
+/* =================================
   Base Layout Styles
 ==================================== */
 
@@ -222,18 +254,18 @@ margin-top: -10px;
 .container {
   padding-left: 1em;
   padding-right: 1em;
-  
+
 }
 
-  .fb_iframe_widget span{        
+  .fb_iframe_widget span{
         overflow: initial !important;
     }
-  .fb_iframe_widget iframe{  
-        padding-left: 30px; 
-        margin-top: 40px;     
+  .fb_iframe_widget iframe{
+        padding-left: 30px;
+        margin-top: 40px;
         width: 260px !important;
-        height: 380px !important; 
-        background-color: #fffff;   
+        height: 380px !important;
+        background-color: #fffff;
     }
 
 
@@ -241,7 +273,7 @@ margin-top: -10px;
      width: 100% !important;
  }
 
-/* ================================= 
+/* =================================
   Styles footer
 ==================================== */
 footer {
@@ -250,12 +282,10 @@ footer {
    color:#000;
    margin-top: 20px;
    font-size: 15px;
-  
+
 }
 
 
-/* ================================= 
+/* =================================
   Media Queries
 ==================================== */
-
-
