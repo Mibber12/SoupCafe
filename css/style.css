@@ -10,21 +10,29 @@
 }
 
 body {
+  position: relative;
   font-family: 'Lato', sans-serif;
-  font-size: 18px;
-  font-weight: 400;
-  padding-top: 70px; /** iets meer ruimte gegeven **/
+  font-size: 17px;
+  color: #2b2b2b;
+  padding-top: 50px; 
 }
 
-body,
-html {
- height: 100%
-}
 
+
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow: auto; 
+}
 
 
    .info {
-      padding-top: 60px;
+      padding-top: 80px;
+      color: #000000;
+      font-size: 13px;
    }
 
 /* navbar */
@@ -48,27 +56,27 @@ html {
     /**deze selector hierboven is wel erg specifiek, waardoor het lastiger is om deze te overschrijven als je dat later wilt! Probeer zo min mogelijk specifiek te zijn. Het is een kunst :) **/
    
     color: #000;
-    padding-top: 10px;
+    padding-top: 5px;
     font-weight: bold;
-    font-size: 20px;
-    border: 1px solid #FFF; /** onzichtbaar randje toegevoegd zodat bij een hover of een focus de tekst niet stiekem verspringt **/
+    font-size: 18px;
+    border: 1px solid #ffffff; /** onzichtbaar randje toegevoegd zodat bij een hover of een focus de tekst niet stiekem verspringt **/
 }
 
 
 
 .nav.navbar-nav.navbar-right li a:hover,
 .nav.navbar-nav.navbar-right li a:focus {
-  background: #FFF;
-  border: 1px solid #000;
+  background: #ffffff;
+  border: 1px solid #000000;
 }
 
 .navbar-inverse {
 background-image: none;
-background-color: #fff;
+background-color: #000000;
 }
 
 .navbar-toggle {
-  border-color: #000;
+  border-color: #000000;
   background-color: #fff;
 }
 
@@ -77,11 +85,11 @@ background-color: #fff;
 }
 
 .navbar-toggle:hover {
-    background-color: #000;
+    background-color: #000000;
 }
 
 .navbar-toggle:hover .icon-bar {
-    background-color: #fff;
+    background-color: #000000;
 }
 
 .navbar div.navbar-collapse {
@@ -90,23 +98,12 @@ background-color: #fff;
 }
 
 .navbar> li > a {
-  color: #000000 !important;
+    color: #000000 !important;
 
 }
 
-ul.nav a:hover { color: #000 !important; }
-
-
-.down-button {
-    position: absolute;
-    padding-top: 50px;
-    bottom: 4px;
-    width: 100%;
-   text-align: center;
-   
-}
-.down-button i {
-    color: white;
+ul.nav a:hover { 
+  color: #000000 !important; 
 
 }
 
@@ -136,40 +133,100 @@ ul.nav a:hover { color: #000 !important; }
     }
 }
 
-/* =================================
-  Base Layout Styles
-==================================== */
-h1 {
-  color: #fff;
-  font-family: 'Trocchi', sans-serif;
+
+/*_____________________
+  Header
+  _____________________*/
+
+
+
+
+.jumbotron h1 {
+  font-family: 'Michroma', Arial, serif; font-weight: 500;
   font-size: 120px;
-  padding-left: 10px;
-  font-weight: bold;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  color: #ffffff;
+  padding-top:30px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  text-align: center;
+  
+}   
+
+
+.jumbotron {
+    position: relative;
+    background: #ffffff url("../img/soepkantine1.jpg") center center;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    overflow: hidden;
+    
 }
 
-@media screen and (max-width: 767px) {
+.down-button {
+  position: absolute;
+  bottom: 40px;
+  width: 100%;
+  text-align: center;
 
- h1 {
-    font-size:60px;
+}
+
+.down-button i {
+  color: white;
+
+}
+
+td {
+    padding: 1px;
+
+
+}
+
+th {
+    height: 50px;
+
+  }
+
+  .table-responsive {
+    margin-left: 300px;
+    margin-right: 500px;
+    
+
+  }
+
+  .table-responsive {
+    margin-bottom: 15px;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    border: 1px solid #DDD;
+    -webkit-overflow-scrolling: touch;
+    
+}
+
+@media(min-width:768px) {
+    .intro {
+        height: 100%;
+        
     }
+
 }
+
 
 h2, h3 {
-  color: #000;
+  padding-top: 20px;
+  color: #000000;
   text-align: center;
   font-weight: bold;
 }
 
 h2 {
 padding-top: 50px;
+margin-top: 10px;
 
 }
 
 h4 {
-
    font-weight: bold;
 }
 
@@ -177,24 +234,50 @@ h4 {
   padding-bottom: 10px;
 }
 
-@media screen and (min-width: 767px) {
 
-  .info-title {
-    font-size: 14px;
-  }
+h3 .span {
+  font-style: bold;
+
+}
+
+.soep-name {
+  color: #000000;
+  font-style: bold;
+  font-weight: 800;
+
+}
+
+
+
+/* =================================
+  Base Layout Styles
+==================================== */
+
+
+@media screen and (max-width: 767px) {
+
+ .jumbotron h1{
+    font-size: 40px;
+    color: #ffffff;
+    
+    }
+
+}
+
+
+@media screen and (max-width: 768px) {
+
+
   .info {
-  font-size: 13px;
+  font-size: 16px;
   margin-left: 20px;
   margin-top: -10px;
+  clear: right;
   }
 }
 
 
 .contact {
-    /** margin: 50px;
-    weggehaald omdat dit volgens mij teveel witruimte creert op een specifiek element.
-    Ik zou dan eerder een vaste padding zetten op alle 'row' elementen in het 'main' element.
-    Hiermee krijg je een visuele rust die je niet krijgt als je per blok een margin of padding zet. **/
     text-align: center;
 }
 
@@ -221,21 +304,17 @@ h4 {
 /* ---- Layout Containers ---- */
 
 
-.container {
-  padding-left: 1em;
-  padding-right: 1em;
 
-}
 
   .fb_iframe_widget span{
         overflow: initial !important;
     }
 
   .fb_iframe_widget iframe{
-        padding-left: 25px;
+        padding-left: 5px;
         margin-top: 40px;
-        width: 265px !important;
-        height: 320px !important;
+        width: 285px !important;
+        height: 400px !important;
         background-color: #fffff;
     }
 
@@ -259,6 +338,20 @@ footer {
    color:#000;
    margin-top: 20px;
    font-size: 15px;
+
+}
+/* =================================
+@media
+only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (min--moz-device-pixel-ratio: 1.5),
+only screen and (min-device-pixel-ratio: 1.5){
+
+  html,
+  body{
+    width:100%;
+    overflow-x:hidden;
+  }
 
 }
 
