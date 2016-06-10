@@ -142,12 +142,11 @@ ul.nav a:hover {
 
 
 .jumbotron h1 {
+  
   font-family: 'Michroma', Arial, serif; font-weight: 500;
   font-size: 120px;
   color: #ffffff;
-  padding-top:30px;
-  margin-bottom: 0;
-  padding-bottom: 0;
+  padding-top: 40px;
   text-align: center;
   
 }   
