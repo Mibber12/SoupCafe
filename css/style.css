@@ -15,27 +15,23 @@ body {
   font-size: 17px;
   color: #2b2b2b;
   padding-top: 50px; 
+
 }
 
+html, body {
 
-
-html,body
-{
     width: 100%;
     height: 100%;
     margin: 0px;
     padding: 0px;
     overflow: auto; 
+
 }
 
 
-   .info {
-      padding-top: 80px;
-      color: #000000;
-      font-size: 13px;
-   }
-
-/* navbar */
+/* =================================
+ Navbar
+==================================== */
 
 .navbar {
   margin-bottom: 0px;
@@ -43,58 +39,65 @@ html,body
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
   border:none;
+
 }
 
 .navbar-nav {
   margin: 15px -15px;
   background-color: #FFF;
+
 }
 
 
-
  .nav.navbar-nav.navbar-right li a {
-    /**deze selector hierboven is wel erg specifiek, waardoor het lastiger is om deze te overschrijven als je dat later wilt! Probeer zo min mogelijk specifiek te zijn. Het is een kunst :) **/
    
     color: #000;
     padding-top: 5px;
     font-weight: bold;
     font-size: 18px;
-    border: 1px solid #ffffff; /** onzichtbaar randje toegevoegd zodat bij een hover of een focus de tekst niet stiekem verspringt **/
-}
+    border: 1px solid #ffffff; 
 
+}
 
 
 .nav.navbar-nav.navbar-right li a:hover,
 .nav.navbar-nav.navbar-right li a:focus {
   background: #ffffff;
   border: 1px solid #000000;
+
 }
 
 .navbar-inverse {
 background-image: none;
 background-color: #000000;
+
 }
 
 .navbar-toggle {
   border-color: #000000;
   background-color: #fff;
+
 }
 
 .navbar-toggle .icon-bar {
     background-color: #000;
+
 }
 
 .navbar-toggle:hover {
     background-color: #000000;
+
 }
 
 .navbar-toggle:hover .icon-bar {
     background-color: #000000;
+
 }
 
 .navbar div.navbar-collapse {
     border-top:none;
     box-shadow:none;
+
 }
 
 .navbar> li > a {
@@ -110,36 +113,19 @@ ul.nav a:hover {
 
 .navbar-brand {
   max-width: 80%;
-  padding: 0px 15px; /** padding top en bottom maakte dat het plaatje te laag kwam te staan ten opzichte van de menuknop **/
+  padding: 0px 15px;
+
 }
 
 .navbar-brand img {
-  height: 50px; /** zelfde hoogte als de bootstrap-menubalk **/
-  width: auto; /** houdt de beeldverhouding goed **/
-}
+  height: 50px; 
 
-@media only screen and (min-width: 768px) {
-    .navbar-brand {
-      margin-top: -20px;
-    }
-
-    .navbar-brand img {
-      width: 300px;
-      height: auto;
-    }
-
-    .navbar-right {
-      margin-right: 15px;
-    }
 }
 
 
-/*_____________________
-  Header
-  _____________________*/
-
-
-
+/* =================================
+Jumbotron
+==================================== */
 
 .jumbotron h1 {
   
@@ -175,6 +161,20 @@ ul.nav a:hover {
 
 }
 
+/* =================================
+Info
+==================================== */
+
+.info {
+      padding-top: 80px;
+      color: #000000;
+      font-size: 13px;
+}
+
+/* =================================
+ Table
+==================================== */
+
 td {
     padding: 1px;
 
@@ -184,14 +184,14 @@ td {
 th {
     height: 50px;
 
-  }
+}
 
   .table-responsive {
     margin-left: 300px;
     margin-right: 500px;
     
 
-  }
+}
 
   .table-responsive {
     margin-bottom: 15px;
@@ -203,14 +203,9 @@ th {
     
 }
 
-@media(min-width:768px) {
-    .intro {
-        height: 100%;
-        
-    }
-
-}
-
+/* =================================
+Main container
+==================================== */
 
 h2, h3 {
   padding-top: 20px;
@@ -239,6 +234,7 @@ h3 .span {
 
 }
 
+
 .soep-name {
   color: #000000;
   font-style: bold;
@@ -247,33 +243,9 @@ h3 .span {
 }
 
 
-
 /* =================================
-  Base Layout Styles
+Contact
 ==================================== */
-
-
-@media screen and (max-width: 767px) {
-
- .jumbotron h1{
-    font-size: 40px;
-    color: #ffffff;
-    
-    }
-
-}
-
-
-@media screen and (max-width: 768px) {
-
-
-  .info {
-  font-size: 16px;
-  margin-left: 20px;
-  margin-top: -10px;
-  clear: right;
-  }
-}
 
 
 .contact {
@@ -295,38 +267,23 @@ h3 .span {
  }
 
 
-
 /* =================================
-  Base Layout Styles
+  Facebook widget
 ==================================== */
 
-/* ---- Layout Containers ---- */
 
 
-
-
-  .fb_iframe_widget span{
+  .fb_iframe_widget span {
         overflow: initial !important;
-    }
+  }
 
-  .fb_iframe_widget iframe{
+  .fb_iframe_widget iframe {
         padding-left: 5px;
         margin-top: 40px;
         width: 285px !important;
         height: 400px !important;
         background-color: #fffff;
-    }
-
-
- @media screen and (max-width: 767px){
-
-  .fb_iframe_widget span iframe {
-     display: none;
-  
   }
-}
-
-
 
 /* =================================
   Styles footer
@@ -339,18 +296,62 @@ footer {
    font-size: 15px;
 
 }
-/* =================================
-@media
-only screen and (-webkit-min-device-pixel-ratio: 1.5),
-only screen and (-o-min-device-pixel-ratio: 3/2),
-only screen and (min--moz-device-pixel-ratio: 1.5),
-only screen and (min-device-pixel-ratio: 1.5){
 
-  html,
-  body{
-    width:100%;
-    overflow-x:hidden;
+/* =================================
+  Media queries
+==================================== */
+
+@media only screen and (min-width: 768px) {
+    .navbar-brand {
+      margin-top: -20px;
+    }
+
+    .navbar-brand img {
+      width: 300px;
+      height: auto;
+    }
+
+    .navbar-right {
+      margin-right: 15px;
+
+    }
+}
+
+
+@media screen and (max-width: 767px) {
+
+ .jumbotron h1{
+    font-size: 40px;
+    color: #ffffff;
+    
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+  .info {
+  font-size: 16px;
+  margin-left: 20px;
+  margin-top: -10px;
+  clear: right;
+
   }
+
+}
+
+@media(min-width:768px) {
+    .intro {
+        height: 100%;
+        
+    }
+}
+
+@media screen and (max-width: 767px){
+
+  .fb_iframe_widget span iframe {
+     display: none;
+  
+    }
 
 }
 
