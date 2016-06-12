@@ -238,8 +238,16 @@ h3 .span {
 .soep-name {
   color: #000000;
   font-style: bold;
-  font-weight: 800;
+  font-size: 19px;
+  font-weight: 900;
 
+}
+
+.btn.btn-default {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  color: #337ab7;
+  border-color: #000000;
 }
 
 
